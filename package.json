@@ -1,0 +1,23 @@
+{
+    "name": "ngsi-ld",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/faubourg-numerique/ngsi-ld-js.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/faubourg-numerique/ngsi-ld-js/issues"
+    },
+    "homepage": "https://github.com/faubourg-numerique/ngsi-ld-js#readme",
+    "devDependencies": {
+        "typescript": "^6.0.2"
+    }
+}
