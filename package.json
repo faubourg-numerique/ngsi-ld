@@ -1,8 +1,9 @@
 {
     "name": "ngsi-ld",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "",
-    "main": "index.js",
+    "type": "module",
+    "main": "dist/index.js",
     "scripts": {
         "build": "tsc"
     },
@@ -19,5 +20,8 @@
     "homepage": "https://github.com/faubourg-numerique/ngsi-ld-js#readme",
     "devDependencies": {
         "typescript": "^6.0.2"
+    },
+    "dependencies": {
+        "axios": "^1.13.6"
     }
 }
