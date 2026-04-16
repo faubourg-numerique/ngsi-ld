@@ -84,6 +84,12 @@ const subscription = new Subscription(...);
 await contextBroker.insertSubscription(subscription);
 ```
 
+Delete a subscription
+
+```ts
+await contextBroker.deleteSubscription(subscription.getId());
+```
+
 ## API specification
 
 ### ContextBroker
@@ -99,6 +105,7 @@ await contextBroker.insertSubscription(subscription);
 | findSubscriptions     | { limit?: number, offset?: number }                                | Promise<Subscription[]> |
 | findSubscription      | id: string                                                         | Promise<Subscription>   |
 | insertSubscription    | subscription: Subscription                                         | Promise<void>           |
+| deleteSubscription    | subscriptionId: string                                             | Promise<void>           |
 
 ### Entity
 

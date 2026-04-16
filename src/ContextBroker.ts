@@ -64,4 +64,8 @@ export class ContextBroker {
     async insertSubscription(subscription: Subscription) {
         await this.axiosInstance.post("/subscriptions", subscription.toObject());
     }
+
+    async deleteSubscription(subscriptionId: string) {
+        await this.axiosInstance.delete(`/subscriptions/${subscriptionId}`);
+    }
 }
