@@ -58,6 +58,13 @@ thermostat.setProperty("targetTemperature", 19, new Date().toISOString());
 await contextBroker.updateEntity(london);
 ```
 
+Update an entity attribute
+
+```ts
+sensor.setProperty("status", "ready", new Date().toISOString());
+await contextBroker.updateEntityAttribute(sensor, "status");
+```
+
 Get subscriptions
 
 ```ts
