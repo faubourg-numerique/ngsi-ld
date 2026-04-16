@@ -88,16 +88,17 @@ await contextBroker.insertSubscription(subscription);
 
 ### ContextBroker
 
-| Method             | Parameters                                                         | Return value            |
-| ------------------ | ------------------------------------------------------------------ | ----------------------- |
-| constructor        | url: string, contextUrl?: string                                   | ContextBroker           |
-| findEntities       | { type?: string, query?: string, limit?: number, offset?: number } | Promise<Entity[]>       |
-| findEntity         | id: string                                                         | Promise<Entity>         |
-| insertEntity       | entity: Entity                                                     | Promise<void>           |
-| updateEntity       | entity: Entity                                                     | Promise<void>           |
-| findSubscriptions  | { limit?: number, offset?: number }                                | Promise<Subscription[]> |
-| findSubscription   | id: string                                                         | Promise<Subscription>   |
-| insertSubscription | subscription: Subscription                                         | Promise<void>           |
+| Method                | Parameters                                                         | Return value            |
+| --------------------- | ------------------------------------------------------------------ | ----------------------- |
+| constructor           | url: string, contextUrl?: string                                   | ContextBroker           |
+| findEntities          | { type?: string, query?: string, limit?: number, offset?: number } | Promise<Entity[]>       |
+| findEntity            | id: string                                                         | Promise<Entity>         |
+| insertEntity          | entity: Entity                                                     | Promise<void>           |
+| updateEntity          | entity: Entity                                                     | Promise<void>           |
+| updateEntityAttribute | entity: Entity, name: string                                       | Promise<void>           |
+| findSubscriptions     | { limit?: number, offset?: number }                                | Promise<Subscription[]> |
+| findSubscription      | id: string                                                         | Promise<Subscription>   |
+| insertSubscription    | subscription: Subscription                                         | Promise<void>           |
 
 ### Entity
 
