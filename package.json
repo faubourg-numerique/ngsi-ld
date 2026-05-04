@@ -9,15 +9,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/faubourg-numerique/ngsi-ld-js.git"
+        "url": "git+https://github.com/faubourg-numerique/ngsi-ld.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/faubourg-numerique/ngsi-ld-js/issues"
+        "url": "https://github.com/faubourg-numerique/ngsi-ld/issues"
     },
-    "homepage": "https://github.com/faubourg-numerique/ngsi-ld-js#readme",
+    "homepage": "https://github.com/faubourg-numerique/ngsi-ld#readme",
     "devDependencies": {
         "typescript": "^6.0.2"
     },
