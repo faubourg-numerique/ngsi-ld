@@ -46,7 +46,7 @@ export class ContextBroker {
     }
 
     async updateEntityAttribute(entity: Entity, name: string) {
-        await this.axiosInstance.post(`/entities/${encodeURIComponent(entity.getId())}/attrs/${encodeURIComponent(name)}`, entity.data[name]);
+        await this.axiosInstance.patch(`/entities/${encodeURIComponent(entity.getId())}/attrs/${encodeURIComponent(name)}`, entity.data[name]);
     }
 
     async findSubscriptions({ limit, offset }: { limit?: number, offset?: number }): Promise<Subscription[]> {
